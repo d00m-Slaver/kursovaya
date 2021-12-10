@@ -1,0 +1,80 @@
+body{
+	margin: 0px !important;
+	background-image: url(Art.jpg);
+	background-size: 100%;
+	background-color: black;
+	background-repeat: no-repeat;
+}
+
+#osn{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	color: white;
+	width: 55%;
+	height: 80%;
+	margin: 0px auto;
+	margin-top: 2%;
+	border-radius: 30px;
+}
+
+footer{
+	border: 2px solid whitesmoke;
+	border-top-right-radius:30px;
+	border-top-left-radius:30px;
+	height: 40px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+video{
+	align-self: center;
+	width: 99%;
+}
+
+#row1{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	border: 2px solid whitesmoke;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+#all{
+	margin: 0px auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: red;
+	border-radius: 10px;
+}
+
+#next{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	margin-left: -15%;
+	width: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: red;
+	border-radius: 10px;
+}
+
+#prev{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	margin-right: -15%;
+	width: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: red;
+	border-radius: 10px;	
+}

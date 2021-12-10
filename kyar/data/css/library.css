@@ -1,0 +1,319 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+input::-webkit-input-placeholder { color: white; }
+input::-moz-placeholder { color: white; }
+body{
+	margin: 0px !important;
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-size: 1em;
+	background-color: black;
+}
+
+#absolutnbly{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+@-webkit-keyframes searchColor{
+0% {background-color: rgba(121, 102, 126,0.7)}
+10% {background-color: rgba(155, 109, 168,0.7)}
+20% {background-color: rgba(126, 109, 102,0.7)}
+30% {background-color: rgba(163, 117, 98,0.7)}
+40% {background-color: rgba(107, 126, 102,0.7)}
+50% {background-color: rgba(121, 163, 110,0.7)}
+60% {background-color: rgba(102, 119, 126,0.7)}
+70% {background-color: rgba(92, 58, 66,0.7)}
+80% {background-color: rgba(106, 164, 188,0.7)}
+90% {background-color: rgba(77, 112, 72,0.7)}
+100%{background-color: rgba(121, 102, 126,0.7)}
+}
+
+@-webkit-keyframes settingColor{
+0% {background-color: rgba(121, 102, 126,0.4)}
+10% {background-color: rgba(155, 109, 168,0.4)}
+20% {background-color: rgba(126, 109, 102,0.4)}
+30% {background-color: rgba(163, 117, 98,0.4)}
+40% {background-color: rgba(107, 126, 102,0.4)}
+50% {background-color: rgba(121, 163, 110,0.4)}
+60% {background-color: rgba(102, 119, 126,0.4)}
+70% {background-color: rgba(92, 58, 66,0.4)}
+80% {background-color: rgba(106, 164, 188,0.4)}
+90% {background-color: rgba(77, 112, 72,0.4)}
+100%{background-color: rgba(121, 102, 126,0.4)}
+}
+header{
+	font-size: 1em;
+	width: 98%;
+	padding: 1%;
+	padding-top: 0.8% !important;
+	border-bottom: 1px solid wheat;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(64, 61, 63, 0.4);
+
+}
+a:hover,#buttonRand:hover{
+	color:#ebcbff;
+}
+
+a,#buttonRand{
+	color: #e5e5e5;
+}
+a,a:hover,#buttonRand:hover{
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+svg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#library{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	max-width: 760px;
+	margin-right: 25%;
+	margin-left: 25%;
+	flex-wrap: wrap;
+	background-color: rgba(64, 61, 63, 0.4);
+	border-radius: 30px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-top: 0.3%;
+	margin-bottom:3%;
+}
+footer{
+	position: relative;
+	bottom: 0px;
+	width: 98%;
+	padding: 1%;
+	padding-top: 0.8% !important;
+	text-align: center;
+	border-top: 1px solid #827b87;
+	background-color: rgba(64, 61, 63, 0.4);
+	color:wheat ;
+}
+#videoBg{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	display: block;
+	position: fixed;
+
+}
+#searchStroke{
+	width: 98%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top: 1%;
+	color: white;
+	background-color: rgba(226, 212, 125, 0.7);
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #827b87;
+	animation: searchColor 15.1s infinite;
+	-webkit-animation: searchColor 15.1s infinite;
+}
+#svgBg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+}
+
+.picAnime{
+	width: 180px;
+	height: 180px;
+	border-radius: 100px;
+}
+
+.textAnime{
+	padding-top: 30px;
+}
+
+.animeName{
+	text-align: center;
+	background-color: rgba(50, 65, 71, 1.0);
+	border-radius: 15px;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;	
+	padding-top:5px;
+	padding-bottom: 20px;
+	width: 200px;
+	height: 280px;
+	margin: 24px;
+	color: wheat;
+	border: double 2px ;
+}
+
+.animeName:hover{
+	background-color: rgba(130, 122, 122, 0.5);
+}
+
+#toolBar{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	width: 760px;
+	height:60px;
+	left: 50%;
+}
+
+.mainMenu{
+	color: white;
+	width: 25%;
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+#showSettings{
+	position: absolute;
+	display: none;
+	background-color: rgba(56, 64, 122, 0.2);
+	width: 280px;
+	height: 550px;
+	top: 90px;
+	right: 0px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	border-top: 2px solid wheat;
+	border-left: 2px solid wheat;
+	border-bottom: 2px solid wheat;
+}
+
+#setHeader{
+	display: flex;
+	flex-direction: row;
+	padding: 1%;
+	width: 98%;
+	border-bottom: 1px solid wheat;
+}
+#mainSettings{
+	border-right: 2px solid wheat;	
+	border-top-left-radius:7px;
+	width: 80%;
+	font-size: 2em !important;
+}
+#closeSettings{
+	width: 20%;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 35px;
+	margin-top: 0px !important;
+	color: rgb(208, 214, 255);
+	animation: settingColor 15.1s infinite;
+	-webkit-animation: settingColor 15.1s infinite;
+	cursor: pointer;
+}
+#mainSettings{
+	font-size: 1em;
+	color: rgb(224, 222, 255);
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;	
+	background-color: rgba(156, 168, 255, 0.2);
+	cursor: pointer;
+	animation: settingColor 15.1s infinite;
+	-webkit-animation: settingColor 15.1s infinite;
+}
+
+#mainSettings:hover{
+	background-color: rgba(156, 168, 255, 0.0);
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+#closeSettings:hover{
+	background-color: rgba(199, 195, 255, 0.0);
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#mainSettingsForm{
+	margin: 3%;
+	width: 92%;
+	height: 480px;
+	border-radius: 3px;
+	border-bottom-left-radius: 10px;
+	border:1px solid wheat;
+	animation: settingColor 15.1s infinite;
+	-webkit-animation: settingColor 15.1s infinite;
+}
+
+.settingName{
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #635e66 ;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.formString{
+	display: flex;
+	flex-direction: row-reverse;
+	color: white;
+	width: 96%;
+	border-bottom: 1px solid wheat ;
+	margin-left: 2%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.formString input{
+	width: 10%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.formString div{
+	width: 90%;
+	text-align: left;
+
+}
+#musicChoose{
+	margin: 2%;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.setNewSetting{
+	border-radius: 3px;
+	border: 2px solid wheat;
+	text-align: center;
+	color: #dee7ff;
+	padding-bottom: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+	cursor: pointer;
+	background-color: rgba(226, 205, 240, 0.2);
+}
+
+.setNewSetting:hover{
+	background-color: rgba(226, 205, 240, 0.0);
+	color: white;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+@media()

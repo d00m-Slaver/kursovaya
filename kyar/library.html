@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Библиотека|Только лучшее</title>
+	<link rel="stylesheet" type="text/css" href="data/css/library.css">
+	<link rel="icon" href="data/img/sharingan.ico">
+	<script src="data/css/jquery-3.3.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script src="data/js/library.js"></script>
+</head>
+<body>
+	<div id="svgBg">
+		<svg>
+		<rect x="0" y="0" width="100%" height="100%" fill="#301630">
+			<animate attributeName="fill" values="#79667E;#9b6da8;#7E6D66;#a37562;#6B7E66;#79a36e;#66777E;#5c3a42;#6aa4bc;#4d7048;#79667E;" dur="15s" repeatCount="indefinite"/>
+		</rect>
+	</svg>	
+	</div>
+	<video id="videoBg" src="data/video/bdLibrary.mp4" muted autoplay loop></video>
+	<div id="absolutnbly">
+		<header>
+		
+			<div class="mainMenu"><a href="index.html" title="Переход на страницу ожидания.">Страница ожидания</a></div>
+		
+			<div class="mainMenu"> <span >Случайное аниме</span></div>
+		
+			<div class="mainMenu">Избранные</div>
+		
+			<div class="mainMenu" id="aSettings">Настройки</div>
+		
+		</header>
+		
+		<div id="library">
+			<input type="text" id="searchStroke" name="search" placeholder="Поиск...">
+			<div class="animeName" onclick="animeChose('data/anime/jujutsu-kaisen/jujutsuKaisenAll.html')">
+				<img class="picAnime" src="data/img/jujutsuKaisen2.jpg">
+				<div class="textAnime">Магическая битва<br>24 эпизода</div>
+			</div>
+			<div class="animeName" onclick="animeChose('data/anime/trigan/triganAll.html')">
+				<img class="picAnime" src="data/img/trigun2.jpg">
+				<div class="textAnime">Триган<br>26 эпизодов<br>1 фильм</div>
+			</div>
+			<div class="animeName" onclick="animeChose('data/anime/cowboy-bebop/cowboy-bebopAll.html')">
+				<img class="picAnime" src="data/img/cowboyBebop.jpg">
+				<div class="textAnime">Ковбой Бибоп<br>26 эпизодов<br>1 фильм</div>
+			</div>
+			<div class="animeName" onclick="animeChose('data/anime//cowboy-bebopAll.html')">
+				<img class="picAnime" src="data/img/Avatar_Aang.jpg">
+				<div class="textAnime">Аватар<br>Легенда об Анге<br>61 эпизод</div>
+			</div>
+		</div>
+
+			<div id="showSettings">
+		<div id="setHeader">
+			<div id="mainSettings">Настройки</div>
+			<div id="closeSettings">&#10006;</div>
+		</div>
+		<div id="settingForm">
+			<form id="mainSettingsForm" name="mainSettingsForm">
+    	
+    	<div class="formString">
+        <input type="checkbox" id="nightLight" name="nightLight">
+        <div>Темная тема :</div>
+        </div>
+        
+        <div class="formString">
+        <input type="checkbox" id="bgSettingPS" name="bgSettingPS">
+        <div>Остановить видеофон :</div>
+      	</div>
+
+        <div class="formString">
+		<input type="checkbox" name="noneBgVideo" id="noneBgVideo">
+		<div>Отключить видеофон :</div>
+		</div>
+		
+		<div class="formString">
+		<input type="checkbox" name="svgBgOnOff" id="svgBgOnOff">
+		<div>Включить анимационный фон :</div>
+		</div>
+	    
+	    <div class="formString">
+        <input type="checkbox" id="musicSettingOnOff" name="musicSettingOnOff">
+        <div>Включить/выключить музыку : 
+        <select name="musicChoose">
+        	<option value="0">Трек 1</option>
+        	<option value="1">Трек 2</option>
+        	<option value="2">Трек 3</option>
+        </select>
+    	</div>
+      	</div>
+      
+    	<div class="setNewSetting setFirst" onclick="checkNewSetting()">Применить</div>
+	</form>
+	</div>
+</div>
+		<footer>&copy; Anton Pinchuk 2021</footer>
+	</div>	
+		<div id="blackSvg" onclick="skipBlackSvg()">
+		<svg>
+		<rect x="0" y="0" width="100%" height="100%" fill="black"fill-opacity="1">
+			<animate attributeName="fill-opacity" from="1" to="0" dur="1s" repeatCount="indefinite"/>
+		</rect>
+	</svg>	
+</div>
+</body>
+</html>

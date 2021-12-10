@@ -1,0 +1,459 @@
+@charset "utf-8";
+::-webkit-input-placeholder { color: white; }
+body{
+	margin: 0px !important;
+	width: 100%;
+	height: 100%;
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-size: 1em;
+	background-color: black;
+}
+video{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	display: block;
+	position: fixed;
+	}
+
+a:hover,#aSettings:hover,#aboutUs:hover,#goToEmail:hover{
+	color:#ebcbff;
+}
+
+a,#aSettings,#aboutUs,#goToEmail{
+	color: #e5e5e5;
+}
+a,a:hover,#aSettings,#aboutUs,#goToEmail{
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#userName,#mailAdres,#userNumber,#massage{
+		background-color: rgba(56, 64, 122, 0.5);
+		color: white;
+}
+
+#goToEmail{
+	background-color: rgba(56, 64, 122, 0.5);
+	cursor: pointer;
+}
+.selectForm{
+	background-color: rgba(56, 64, 122, 0.5);
+	color: white;
+}
+svg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+header{
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	width: 98%;
+	padding: 1%;
+	padding-top: 0.8% !important;
+	float: left;
+	border-bottom: 1px solid #635e66;
+	box-shadow: 0.0em 0.0em 150px rgba(122,122,122,1);
+	animation: headerColor 90.4s infinite;
+	-webkit-animation: headerColor 90.4s infinite;
+}
+
+#sharunganMp{
+	display: none;
+}
+#svgBg{
+	display: none;
+}
+@-webkit-keyframes headerColor{
+0% {background-color: rgba(167, 217, 255,0.2)}
+20% {background-color: rgba(199, 209, 216,0.2)}
+40% {background-color: rgba(198, 255, 221,0.2)}
+60% {background-color: rgba(167, 217, 255,0.2)}
+80% {background-color: rgba(199, 209, 216,0.2)}
+100% {background-color: rgba(198, 255, 221,0.2)}
+}
+
+#oNas{
+	position: absolute;
+	display: none;
+	flex-direction: row;
+	position: absolute;
+	background-color: rgba(56, 64, 122, 0.2);
+	width: 850px;
+	height: 400px;
+	top: 100px;
+	left: 100px;
+	border-radius:10px;
+	border: 2px solid #827b87;
+
+}
+#oNas #inform{
+	width: 70%;
+	height: 100%;
+}
+#formONas form{
+	display: flex;
+	flex-direction: column;
+
+
+}
+#formONas form *{
+	
+	width: 70%;
+	margin: 5% 15% 5% 15%;
+	border-radius: 5px;
+	border: 2px solid #827b87;
+	opacity: 0.7;
+	outline: none;
+}
+
+#userName{
+	margin-top:10% !important;
+}
+#massage{
+	height: 50px !important;
+ 	resize: none;
+}
+#goToEmail{
+
+	margin-top:15% !important;
+	width: 50% !important;
+	margin-left: 25% !important;
+	margin-right: 25% !important;
+}
+article{
+	font-size: 1em;
+	color: white;
+	margin: 5%;
+	cursor: default;
+}
+.informZaglav{
+	padding-top: 5px;
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	height: 30px;
+	width: 100%;
+	border-bottom: 2px solid #827b87;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+#formONas{
+	width: 30%;
+	height: 100%;
+	background-color: rgba(56, 64, 122, 0.2);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-left: 2px solid #827b87;
+}
+#watchLast,#aboutUs{
+	float: left;
+	text-align: left;
+}
+#main{
+	width: 15%;
+	float: left;
+	text-align: center;
+}
+#watchLast{
+	width: 15%;
+}
+#aboutUs{
+	width: 15%;
+}
+#regAus{
+	width: 45%;
+	float: left;
+	text-align: right;
+}	
+#settingsBlock{
+	width: 10%;
+	text-align: right;
+}
+#aLIBRARY,#aNext,#aboutUs,#aPersonalArea,#aSettings{
+	text-decoration: underline;	
+	cursor: pointer;
+}
+
+#regAusForm{
+width: 250px;
+height: 450px;
+border: 1px solid #827b87;
+top: 150px;
+left: 42%;
+position: absolute;
+display: none;
+border-radius: 5px;
+background-color: rgba(38, 82, 111, 0.3);
+color:rgb(140, 174, 197) ;
+
+}
+#regAusName{
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #635e66 ;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#regAusForm form input {
+	margin: 7% 15% 7% 15%;
+	border-radius: 3px;;
+	border: 1px solid #827b87;
+	background-color: rgba(56, 64, 122, 0.5);
+	outline: none;
+	color: white;
+}
+
+#buttonReg{
+	border: 1px solid #827b87;
+	padding-bottom: 4px;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: rgba(38, 82, 111, 0.5);
+	color:white;
+	text-align: center;
+	border-radius: 5px;
+	width: 60%;
+	margin: 18% 18% 0% 18%;
+	cursor: pointer;
+		-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#ili{
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	cursor: default;
+}
+#buttonLogin{
+	border: 1px solid #827b87;
+	padding-bottom: 4px;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: rgba(38, 82, 111, 0.5);
+	color:white;
+	text-align: center;
+	border-radius: 5px;
+	width: 60%;
+	margin-left:18%;
+	margin-right: 18%;
+	cursor: pointer;
+		-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#buttonReg:hover,#buttonLogin:hover{
+color: #ebcbff;
+}
+
+.hiddenFooter {
+float: left;
+position: fixed;
+width:100%;
+height:50px;
+bottom: 60px;
+}
+
+.hiddenFooter .onHiddenFooter{
+text-align: center;
+padding-top: 20px;
+display: none;
+width: 100%;
+height: 40px;
+border-top: 1px solid #827b87;
+position: absolute;
+bottom: -60px;
+background-color: rgba(38, 82, 111, 0.2);
+color:rgb(140, 174, 197) ;
+}
+
+#showSettings{
+	position: absolute;
+	display: none;
+	background-color: rgba(56, 64, 122, 0.2);
+	width: 280px;
+	height: 550px;
+	top: 90px;
+	right: 0px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	border-top: 2px solid #827b87;
+	border-left: 2px solid #827b87;
+	border-bottom: 2px solid #827b87;
+}
+
+#setHeader{
+	display: flex;
+	flex-direction: row;
+	padding: 1%;
+	width: 98%;
+	border-bottom: 1px solid #827b87;
+}
+#setColumn{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	border-right: 2px solid #827b87;
+
+}
+#mainSettings{
+	border-bottom: 1px solid #827b87;	
+	border-top-left-radius:7px;
+}
+#newSettings{
+	border-top: 1px solid #827b87;	
+}
+#closeSettings{
+	width: 20%;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 35px;
+	margin-top: 0px !important;
+	color: rgb(208, 214, 255);
+	background-color: rgba(199, 195, 255, 0.2);
+	cursor: pointer;
+}
+#mainSettings,#newSettings{
+	font-size: 1em;
+	color: rgb(224, 222, 255);
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;	
+	background-color: rgba(156, 168, 255, 0.2);
+	cursor: pointer;
+}
+
+#mainSettings:hover,#newSettings:hover{
+	background-color: rgba(156, 168, 255, 0.0);
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+#closeSettings:hover{
+	background-color: rgba(199, 195, 255, 0.0);
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#settingForms{
+	width: 98%;
+	padding: 0% 1% 1% 1%;
+}
+#mainSettingsForm{
+	background-color: rgba(156, 168, 255, 0.2);
+	margin: 3%;
+	width: 94%;
+	height: 410px;
+	border-radius: 3px;
+	border:1px solid #635e66 ;
+}
+
+#newSettingsForm{
+	background-color: rgba(156, 168, 255, 0.2);
+	margin: 3%;
+	width: 94%;
+	height: 50px;
+	border-radius: 3px;
+	border:1px solid #635e66 ;
+}
+.settingName{
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #635e66 ;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.formString{
+	display: flex;
+	flex-direction: row-reverse;
+	color: white;
+	width: 96%;
+	border-bottom: 1px solid #635e66 ;
+	margin-left: 2%;
+	padding-bottom: 5px;
+}
+.formString input{
+	width: 10%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.formString div{
+	width: 90%;
+	text-align: left;
+
+}
+
+#musicChoose{
+	margin: 2%;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.setNewSetting{
+	border-radius: 3px;
+	border: 2px solid #635e66;
+	text-align: center;
+	color: #dee7ff;
+	padding-bottom: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 150px;
+	cursor: pointer;
+	background-color: rgba(226, 205, 240, 0.2);
+}
+#newSettingsForm .setNewSetting, #newSettingsForm .formStringNew {
+	display: none;
+
+}
+.formStringNew{
+	display: flex;
+	flex-direction: row-reverse;
+	color: white;
+	width: 96%;
+	border-bottom: 1px solid #635e66 ;
+	margin-left: 2%;
+	padding-bottom: 5px;
+}
+.formStringNew input{
+	width: 10%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.formStringNew div{
+	width: 90%;
+	text-align: left;
+
+}
+.setNewSetting:hover{
+	background-color: rgba(226, 205, 240, 0.0);
+	color: white;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+

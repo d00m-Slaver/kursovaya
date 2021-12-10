@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animate | Смотри аниме с комфортом!</title>
+	<link rel="stylesheet" type="text/css" href="data/css/index.css">
+	<link rel="icon" href="data/img/sharingan.ico">
+	<script src="data/css/jquery-3.3.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script src="data/js/index.js"></script>
+</head>
+<body>
+
+	<div id="animeV" style="display:none;">
+		<video src="data/video/prerol.mp4" autoplay muted>
+		</video>
+	</div>
+	<div id="sharunganMp">
+		<video src="data/video/sharinganBgTwo.mp4" muted autoplay loop></video>
+	</div>
+	<div id="videoClass">
+		<video src="data/video/background.mp4" muted autoplay loop></video>
+	</div>
+<div id="svgBg">
+		<svg>
+			<rect fill="" width="100%" height="100%">
+				<animate attributeName="fill"  values="#41527d;#917c49;#7d497b;#497f4a;#9a625b;#52858c;#848760;#568686;#41527d;" dur="15s" repeatCount="indefinite">
+			</rect>
+
+		</svg>
+	</div>
+	<header>
+
+		<div id="main">
+			<a href="library.html" title="Список всех доступных аниме.">Библиотека</a>
+		</div>
+		<div id="watchLast">
+			<a href="library.html" id="aNext" onclick="watchVDA()" title="Последняя просмотренная серия.">Продолжить просмотр</a>
+		</div>
+		<div id="aboutUs">
+			<span id="aONas" title="Контантная информация для связи.">О нас | Обратная связь</span>
+		</div>
+		<div id="regAus">
+			<a id="aPersonalArea" onclick="openArea()" title="Открытие окна регистрации/авторизации.">Регистрация | Авторизация</a>
+		</div>
+		<div id="settingsBlock">
+			<span id="aSettings" title="Настройки страницы ожидания.">Настройки</span>
+		</div>
+	
+	</header>
+	<div id="showSettings">
+		<div id="setHeader">
+
+			<div id="setColumn">
+				<div id="mainSettings">Основные</div>
+				<div id="newSettings">Дополнительные</div>
+			</div>
+			<div id="closeSettings">&#10006;</div>
+		</div>
+		<div id="settingForms">
+
+	<form id="mainSettingsForm" name="mainSettingsForm">
+		<div class="settingName">
+			Основные настройки
+		</div>	
+    	<div class="formString">
+        	<input type="checkbox" id="nightLight" name="nightLight">
+        <div>Темная тема :</div>
+        
+      </div>
+      <div class="formString">
+        <input type="checkbox" id="bgSettingPS" name="bgSettingPS">
+        <div>Остановить видеофон :</div>
+        
+      </div>
+      <div class="formString">
+        <input type="checkbox" id="musicSettingOnOff" name="musicSettingOnOff">
+        <div>Включить/выключить музыку : 
+        <select class="selectForm" name="musicChoose">
+        	<option value="0">Трек 1</option>
+        	<option value="1">Трек 2</option>
+        	<option value="2">Трек 3</option>
+        </select>
+    	</div>
+      </div>
+      <div class="setNewSetting setFirst" onclick="checkNewSetting()">Применить</div>
+		</form>
+		<form id="newSettingsForm">
+			<div class="settingName ">
+				Дополнительные настройки
+				</div>
+				<div class="formStringNew">
+					<input type="checkbox" name="noneBgVideo" id="noneBgVideo">
+					<div>Отключить видеофон :</div>
+				</div>
+				<div class="formStringNew">
+					<input type="checkbox" name="svgBgOnOff" id="svgBgOnOff">
+					<div>Включить анимационный фон :</div>
+				</div>
+			<div class="setNewSetting setSecond" onclick="checkNewSetting()">Применить</div>
+		</form>
+	</div>
+</div>
+<div id="regAusForm">
+			<div id="regAusName">Регистрация</div>
+			<form name="regAusForm">
+				<input type="text" name="userMail" id="userMail" placeholder="Введите почту:">
+				<div id="newIli"></div>
+				<input type="text" name="userLogin" id="userLogin" placeholder="Введите никнейм:">
+				<input type="password" name="userPass" id="userPass" placeholder="Введите пароль:">
+				<input type="password" name="userPassTwo" id="userPassTwo" placeholder="Повторите пароль:">
+			</form>
+			<div id="buttonReg">Зарегистрироваться</div>
+			<div id="ili">или</div>
+			<div id="buttonLogin"> Уже зарегистрированы?</div>
+</div>
+<div id="oNas">
+	<div id="inform">
+		<div class="informZaglav" title="Вкладку можно закрыть нажатием на &laquo;О НАС&raquo; или &laquo;ОБРАТНАЯ СВЯЗЬ&raquo;">О НАС</div>
+		<article>&compfn; Проект задумывался как удобная платформа для просмотра анимационных мультфильмов японского и общеазиатского стиля.
+		<br>&compfn; Работа была выполнена одним студентом живущим в Беларуси, обучающимся в БГТУ, одном из главных университетов страны.
+		Идея родилась ещё в июле 2021 года, задолго до того как объявили о курсовой работе.
+		<br>&compfn; Студент днями и ночами писал этот сайт для того, чтобы он, и его друзья могли наслаждаться просмотром тех мультфильмов которые довно ждали.
+		Так же, для особо смышленных, на сайте оставлено несколько скрытых кнопок, они будут доступны если вы открыли сайт не на ноутбуке автора, а на своём собственном девайте!
+		<br>&compfn; Прошу вас не проходить мимо: студент создавший этот сайт нуждается в еде!(&dollar;)
+	</article>
+		</div>
+	<div id="formONas">
+		<div class="informZaglav" title="Вкладку можно закрыть нажатием на &laquo;О НАС&raquo; или &laquo;ОБРАТНАЯ СВЯЗЬ&raquo;">ОБРАТНАЯ СВЯЗЬ</div>
+		<form>
+			<input type="text" name="userName" id="userName" placeholder="Ваше имя:">
+			<input type="text" name="mailAdres" id="mailAdres" placeholder="Email:">
+			<input type="text" name="userNumber" id="userNumber" placeholder="Контактный номер:">
+			<textarea name="massage" id="massage" placeholder="Сообщение для разработчика:"></textarea>
+			<input type="submit" name="goToEmail" id="goToEmail">
+		</form>
+	</div>
+</div>
+	<div id="blackSvg" onclick="skipBlackSvg()">
+		<svg>
+		<rect x="0" y="0" width="100%" height="100%" fill="black"fill-opacity="1">
+			<animate attributeName="fill-opacity" from="1" to="0" dur="3s" repeatCount="indefinite"/>
+		</rect>
+	</svg>	
+</div>
+	<footer>
+		<div id="nav">
+		<div class="hiddenFooter">
+			<div class="onHiddenFooter">
+				&copy; Anton Pinchuk 2021
+			</div>
+		</div>
+	</div>
+	</footer>
+</body>
+</html>
